@@ -24,3 +24,8 @@ class Calculator:
         if b == 0:
             raise ValueError("Cannot divide by zero")
         return a / b
+    def mean(self, numbers):
+        """Return the mean of a list of numbers."""
+        if not numbers:
+            raise ValueError("The list of numbers cannot be empty")
+        return sum(numbers) / len(numbers)
